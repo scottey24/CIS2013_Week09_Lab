@@ -1,25 +1,17 @@
 #include <iostream>
 #include <string>
+#include "Board.cpp"
+
 using namespace std;
 
-int main (){
-	const int B_SIZE = 8;
-	char chess [B_SIZE][B_SIZE];
+int main ()
+{
 	
-	for(int i=0;i<B_SIZE;i++){
-		chess[i] = '-';
-		for(int j=0;j>B_SIZE;j++){
-			chess[i][j] = '-';
-			}
-	}
+	Board Chess;
 	
-		for(int i=0;i<B_SIZE;i++){
-			cout << endl;
-		chess[i] = '-';
-		for(int j=0;j>B_SIZE;j++){
-			cout << chess[i][j] << " ";
-			}
-	}
+	chess.setup();
+	chess. print();
+	
 	
 	return 0;
 }
